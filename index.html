@@ -13,51 +13,103 @@
 <body>
     <!--  -->
    <header>
-    <div class="row debug">
+    <div class="row mx-0 debug">
         <di class="col-auto debug">
             <img src="./img/logo.svg" alt="">
         </di>
         <di class="col debug">
             <nav class="navbar">
                 <div class="container-fluid">
-                    <input class="form-control me-2 bg-secondary" type="search" placeholder="Prova a cercare" aria-label="Search">
+                    <input class="form-control me-2 bg-secondary bg-opacity-25" type="search" placeholder="Prova a cercare" aria-label="Search">
                 </div>
               </nav>
         </di>
-        <di class="col-auto debug">
+        <div class="col-auto debug">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link" href="#">Features</a>
-                      <a class="nav-link" href="#">Pricing</a>
-                      <a class="nav-link disabled">Disabled</a>
+                      <a class="nav-link" href="#"><i class="bi bi-list"></i></a>
+                      <a class="nav-link" href="#"><i class="bi bi-question-circle"></i></a>
+                      <a class="nav-link disabled"><i class="bi bi-three-dots-vertical"></i></a>
                     </div>
                   </div>
                 </div>
               </nav>
-        </di>
+        </div>
     </div>
    </header> 
    <!--  -->
-<div class="row debug">
-   <div class="col-2 debug">
-    <aside></aside>
+<div class="row mx-0 debug">
+   <div class="col-1 debug">
+    <aside>
+        <div>
+            <i class="fa-solid fa-house"></i>
+            Home
+        </div>
+        <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            Stats
+        </div>
+        <div>
+            <i class="fa-solid fa-signal"></i>
+            Signals
+        </div>
+    </aside>
    </div>
-   <div class="col-10 debug">
+   <div class="col-11 debug">
     <main>
-        <section>
-            <div class="row debug">
-                <div class="col-6 debug"></div>
-                <div class="col-3 debug"></div>
-                <div class="col-3 debug"></div>
+        <section class="bg-color">
+            <div class="row mx-0 debug">
+                <div class="col-6 debug">
+                    <h1 class="d-inline-block">Boolean </h1><span class="badge bg-gradient">Piano Blaze</span>
+                    <div> 
+                        <span class="badge bg-gradient">3 app</span>
+                        <i class="bi bi-chevron-double-right"></i>
+                        <span class="badge bg-gradient">Boolean Mobile App</span>
+                        <span class="badge bg-gradient">Boolean Web App</span>
+                        <span class="badge bg-gradient">Boolean Blog App</span>
+                    </div>
+                </div>
+                <div class="col-3 debug">
+                    Studenti online negli ultimi 30 min
+                    <div>125</div>
+                </div>
+                <div class="col-3 debug">
+                    Nuovo studente <i class="bi bi-plus-square"></i>
+                </div>
             </div>
         </section>
         <section>
-            <div class="row debug">
-                <div class="col-8 debug"></div>
+            <div class="row mx-0 debug">
+                <div class="col-8 debug">
+                    <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                              Prossime classi
+                            </div>
+                        <div class="row mx-0 ">
+                            <div class="col">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Nome</li>
+                              <li class="list-group-item">
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 75
+                              </li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                        </div>
+                            <div class="col">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">Data Inizio</li>
+                                  <li class="list-group-item">
+                                    15 febbraio 2021
+                                  </li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                </div>
                 <div class="col-4 debug"></div>
             </div>
         </section>
