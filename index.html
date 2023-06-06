@@ -11,41 +11,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--  -->
-   <header>
-    <div class="row mx-0 debug">
-        <div class="col-auto debug">
-            <img src="./img/logo.svg" alt="">
-        </div>
-        <di class="col debug">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <input class="form-control me-2 bg-secondary bg-opacity-25" type="search" placeholder="Prova a cercare" aria-label="Search">
-                </div>
-              </nav>
-        </di>
-        <div class="col-auto debug">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link" href="#"><i class="bi bi-list"></i></a>
-                      <a class="nav-link" href="#"><i class="bi bi-question-circle"></i></a>
-                      <a class="nav-link disabled"><i class="bi bi-three-dots-vertical"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </div>
-    </div>
-   </header> 
+    <!-- HEADER -->
+<header>
+  <div class="row mx-0 debug">
+      <div class="col-auto debug">
+          <img src="./img/logo.svg" alt="">
+      </div>
+      <div class="col debug">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <input class="form-control me-2 bg-success-subtle" type="search" placeholder="Prova a cercare" aria-label="Search">
+          </div>
+        </nav>
+      </div>
+      <div class="col-auto debug">
+        <nav class="navbar navbar-expand">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link d-none d-lg-block d-xl-block" href="#">
+                  <i class="bi bi-list text-dark-emphasis"></i>
+                </a>
+                <a class="nav-link d-none d-lg-block d-xl-block" href="#">
+                  <i class="bi bi-question-circle text-dark-emphasis"></i>
+                </a>
+                <a class="nav-link d-none d-lg-block d-xl-block">
+                  <i class="bi bi-three-dots-vertical text-dark-emphasis"></i>
+                </a>
+                <a class="nav-link ">
+                  <i class="bi bi-bell-fill text-warning"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </div>
+</header> 
    <!--  -->
 <section class="main-section d-flex debug"> 
-    <aside>
-      <div class="row flex-column h-100 debug px-4 justify-content-between">
+  <aside>
+      <div class="row flex-column h-100 debug px-3 justify-content-between">
         <div class="col">
+          <div>
             <i class="fa-solid fa-house"></i>
             Home
+          </div>
             <div>
               <i class="fa-solid fa-chart-simple"></i>
               Stats
@@ -61,9 +72,9 @@
         </div>
       </div>
     </aside>
-    <main class="ms-2">
+    <main class="w-100 overflow-y-auto">
         <section class="container-fluid">
-            <div class="row debug bg-color">
+            <div class="row g-0 debug bg-color">
                 <div class="col-6 debug">
                     <h1 class="d-inline-block">Boolean </h1><span class="badge bg-gradient">Piano Blaze</span>
                     <div> 
@@ -83,41 +94,132 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container-fluid">
             <div class="row debug g-0">
-                <div class="col-8 debug">
-                    <div class="card my-3" style="width: 18rem;">
-                            <div class="card-header">
-                              Prossime classi
-                            </div>
-                            <ul class="list-group list-group-flush d-flex">
-                              <li class="list-group-item">Nome</li>
-                              <li class="list-group-item">
+                <div class="col-8 debug px-3">
+                   <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                          Prossime classi
+                        </div>
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td>Nome</td>
+                              <td class="col-2">Data Inizio</td>
+                              <td class="col-1">ROI</td>
+                              <td class="col-1">Stato</td>
+                              <td class="col-1">Azioni</td>
+                            </tr>
+                            <tr>
+                              <td>
                                 <img src="./img/class-avatar.jpg" class="w-img" alt="">
                                 Classe 75
-                              </li>
-                              <li class="list-group-item">A third item</li>
-                            </ul>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                          F.A.Q.
-                        </div>
-                        <ul class="list-group list-group-flush d-flex">
-                          <li class="list-group-item">Come aggiungere un nuovo studente</li>
-                        </ul>
+                              </td>
+                              <td>15 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-success">Done</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 76
+                              </td>
+                              <td>16 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-success">Done</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 77
+                              </td>
+                              <td>17 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-warning">Process</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 78
+                              </td>
+                              <td>18 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-success">Done</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 79
+                              </td>
+                              <td>19 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-danger">Failed</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 80
+                              </td>
+                              <td>20 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-success">Done</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 81
+                              </td>
+                              <td>21 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-danger">Failed</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="./img/class-avatar.jpg" class="w-img" alt="">
+                                Classe 81
+                              </td>
+                              <td>22 Feb 2021</td>
+                              <td>20%</td>
+                              <td><span class="badge text-bg-success">Done</span></td>
+                              <td>
+                                <i class="bi bi-pencil-fill"></i>
+                                <i class="bi bi-trash-fill"></i>
+                              </td>
+                            </tr>
                     </div>
                 </div>
+                      </div>
+
                 <div class="col-4 debug">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                         TO DO
-                        </div>
-                        <ul class="list-group list-group-flush d-flex">
-                          <li class="list-group-item">Come aggiungere un nuovo studente</li>
-                        </ul>
-                  </div>
-                </div>
+                    
             </div>
         </section>
     </main>

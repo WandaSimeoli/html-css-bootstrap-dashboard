@@ -17,5 +17,8 @@ header {
     height: calc(100vh - var(--header-height));
 } 
 .w-img {
+    width: 5%;
+}
+aside {
     width: 10%;
 }
