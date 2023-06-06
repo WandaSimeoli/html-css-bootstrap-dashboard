@@ -14,9 +14,9 @@
     <!--  -->
    <header>
     <div class="row mx-0 debug">
-        <di class="col-auto debug">
+        <div class="col-auto debug">
             <img src="./img/logo.svg" alt="">
-        </di>
+        </div>
         <di class="col debug">
             <nav class="navbar">
                 <div class="container-fluid">
@@ -40,27 +40,30 @@
     </div>
    </header> 
    <!--  -->
-<div class="row mx-0 debug">
-   <div class="col-1 debug">
+<section class="main-section d-flex debug"> 
     <aside>
-        <div>
+      <div class="row flex-column h-100 debug px-4 justify-content-between">
+        <div class="col">
             <i class="fa-solid fa-house"></i>
             Home
+            <div>
+              <i class="fa-solid fa-chart-simple"></i>
+              Stats
+            </div>
+            <div>
+              <i class="fa-solid fa-signal"></i>
+              Signals
+            </div>
         </div>
-        <div>
-            <i class="fa-solid fa-chart-simple"></i>
-            Stats
+        <div class="col">
+          <i class="bi bi-gear-fill"></i>
+          Admin
         </div>
-        <div>
-            <i class="fa-solid fa-signal"></i>
-            Signals
-        </div>
+      </div>
     </aside>
-   </div>
-   <div class="col-11 debug">
-    <main>
-        <section class="bg-color">
-            <div class="row mx-0 debug">
+    <main class="ms-2">
+        <section class="container-fluid">
+            <div class="row debug bg-color">
                 <div class="col-6 debug">
                     <h1 class="d-inline-block">Boolean </h1><span class="badge bg-gradient">Piano Blaze</span>
                     <div> 
@@ -81,7 +84,7 @@
             </div>
         </section>
         <section>
-            <div class="row mx-0 debug">
+            <div class="row debug g-0">
                 <div class="col-8 debug">
                     <div class="card my-3" style="width: 18rem;">
                             <div class="card-header">
@@ -118,9 +121,7 @@
             </div>
         </section>
     </main>
-   </div>
-</div>
-   
+</section>
    <!--  -->
    <footer>
 

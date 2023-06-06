@@ -4,9 +4,18 @@
     /* min-height: 100px;
     min-width: 50px; */
 }
+:root {
+    --header-height: 60px;
+}
 .bg-color {
     background-color: #1B72E8;
 }
+header {
+    height: var(--header-height);
+}
+.main-section {
+    height: calc(100vh - var(--header-height));
+} 
 .w-img {
     width: 10%;
 }
