@@ -83,7 +83,7 @@
   <!-- Main -->
   <main class="w-100 overflow-y-auto">
     <section class="container-fluid">
-      <!-- Sezione Blu -->
+      <!-- Sezione Blu con badge-->
       <div class="row g-0 debug bg-color mb-2">
         <div class="col-xl-6 col-lg-6 col-md-6 debug">
           <h1 class="d-inline-block">Boolean </h1>
@@ -101,21 +101,105 @@
           Studenti online negli ultimi 30 min
           <div>125</div>
         </div>
+        <!-- Offcanvas con form -->
         <div class="col-xl-3 col-lg-3 col-md-3 debug">
           Nuovo studente 
           <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <i class="bi bi-plus-square"></i>
           </a>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas offcanvas-end w-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                <form>
+                  <div class="row">
+                    <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
               </div>
-          
+              <div class="row">
+                <div class="col">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+              </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                    <div class="row">
+                      <div class="col">
+                      <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    </div>
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Stato</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Germania</option>
+                        <option value="3">Francia</option>
+                      </select>
+                    </div>
+                    </div>
+                  <div class="col">
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">CAP</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Foto</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Salva</button>
+                  <input class="btn btn-warning" type="reset" value="Reset">
+                </form>
+              </div>
         </div>
       </div>
     </section>

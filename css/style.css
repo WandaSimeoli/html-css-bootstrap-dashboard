@@ -1,9 +1,9 @@
 /* Debug */
-.debug {
+/* .debug {
     border: 1px dashed black;
-    /* min-height: 100px;
-    min-width: 50px; */
-}
+    min-height: 100px;
+    min-width: 50px; 
+}  */
 :root {
     --header-height: 60px;
 }
@@ -17,5 +17,8 @@ header {
     height: calc(100vh - var(--header-height));
 } 
 .w-img {
-    width: 15%;
+    width: 10%;
+}
+.offcanvas.offcanvas-end {
+    width: 50%;
 }
