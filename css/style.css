@@ -17,8 +17,17 @@ header {
     height: calc(100vh - var(--header-height));
 } 
 .w-img {
-    width: 10%;
+    height: 20px;
+}
+.w-logo {
+    height: 50px;
 }
 .offcanvas.offcanvas-end {
     width: 50%;
+}
+.pa {
+    position: absolute;
+    top: 10;
+    bottom: 10;
+    padding: 10px;
 }

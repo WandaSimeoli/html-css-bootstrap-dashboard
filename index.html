@@ -16,12 +16,13 @@
   <div class="row debug">
       <div class="col-auto col-md-2 debug">
           <img src="./img/logo.svg" class="d-lg-block d-xl-block d-none" alt="Logo">
-          <!-- <img src="./img/mobile-logo.png" class="d-lg-none d-xl-none w-img" alt=""> -->
+          <img src="./img/mobile-logo.png" class="d-lg-none d-xl-none w-logo" alt="">
       </div>
       <div class="col debug">
         <nav class="navbar">
-          <div class="container-fluid">
-            <input class="form-control me-2 bg-success-subtle" type="search" placeholder="Prova a cercare" aria-label="Search">
+          <div class="container-fluid position-relative">
+            <i class="fa-solid fa-magnifying-glass pa"></i>
+            <input class="form-control me-2 bg-secondary-subtle px-5" type="search" placeholder="Prova a cercare" aria-label="Search">
           </div>
         </nav>
       </div>
@@ -74,7 +75,7 @@
           <span class="d-none d-lg-inline d-xl-inline"> Signals</span>
         </div>
       </div>
-      <div class="ms-2">
+      <div class=" col-auto ms-2">
         <i class="bi bi-gear-fill"></i>
         <span class="d-none d-lg-inline d-xl-inline">Admin</span>
       </div>
@@ -84,8 +85,8 @@
   <main class="w-100 overflow-y-auto">
     <section class="container-fluid">
       <!-- Sezione Blu con badge-->
-      <div class="row g-0 debug bg-color mb-2">
-        <div class="col-xl-6 col-lg-6 col-md-6 debug">
+      <div class="row g-0 debug bg-color mb-2 text-light py-2">
+        <div class="col-xl-6 col-lg-6 col-md-6 debug py-2">
           <h1 class="d-inline-block">Boolean </h1>
           <span class="badge bg-gradient">Piano Blaze</span>
           <div> 
@@ -99,13 +100,13 @@
         </div>
         <div class="col-xl-3 col-lg-3 col-md-3 debug">
           Studenti online negli ultimi 30 min
-          <div>125</div>
+          <div class="fs-2">125</div>
         </div>
         <!-- Offcanvas con form -->
         <div class="col-xl-3 col-lg-3 col-md-3 debug">
           Nuovo studente 
           <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            <i class="bi bi-plus-square"></i>
+            <i class="bi bi-plus-square text-light fa-xl"></i>
           </a>
           <div class="offcanvas offcanvas-end w-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -207,7 +208,7 @@
     <section class="container-fluid">
       <div class="row debug g-0">
         <div class="col-xl-8 col-lg-8 debug px-3">
-          <div class="card" style="width: 100%;">
+          <div class="card mb-3" style="width: 100%;">
             <div class="card-header">
               Prossime classi
             </div>
@@ -215,24 +216,25 @@
                 <tbody>
                   <tr>
                     <td>Nome</td>
-                    <td class="col-2">Data Inizio</td>
-                    <td class="col-1">ROI</td>
+                    <td class="col-2 d-none d-md-table-cell">Data Inizio</td>
+                    <td class="col-1 d-none d-md-table-cell">ROI</td>
                     <td class="col-1">Stato</td>
-                    <td class="col-1">Azioni</td>
+                    <td class="col-3 col-md-2">Azioni</td>
                   </tr>
                   <tr>
                     <td>
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 75
                     </td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-success">Done</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -240,14 +242,15 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 76
                     </td>
-                    <td>16 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-success">Done</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -255,14 +258,15 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 77
                     </td>
-                    <td>17 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-warning">Process</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -270,14 +274,15 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 78
                     </td>
-                    <td>18 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-success">Done</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -285,14 +290,15 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 79
                     </td>
-                    <td>19 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-danger">Failed</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -300,14 +306,15 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 80
                     </td>
-                    <td>20 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-success">Done</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -315,14 +322,15 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 81
                     </td>
-                    <td>21 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-danger">Failed</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
+                    </td>
                     </td>
                   </tr>
                   <tr>
@@ -330,20 +338,20 @@
                       <img src="./img/class-avatar.jpg" class="w-img" alt="">
                       Classe 81
                     </td>
-                    <td>22 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-success">Done</span>
                     </td>
                     <td>
-                      <i class="bi bi-pencil-fill"></i>
-                      <i class="bi bi-trash-fill"></i>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-pencil-fill text-dark-emphasis"></i></span>
+                      <span class="border border-1 border-secondary p-1 rounded"><i class="bi bi-trash-fill text-dark-emphasis"></i></span>
                     </td>
                   </tr>
               </table>
           </div>
           <!-- Seconda Card con Accordion -->
-          <div class="card" style="width: 100%;">
+          <div class="card mb-3" style="width: 100%;">
             <div class="card-header">
               F.A.Q
             </div>
@@ -351,7 +359,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Come aggiungere un nuovo studente?
+                    Come aggiungere un nuovo studente
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -360,63 +368,73 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Come posso accedere alle informazioni del mio account?
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                      Clicca sull'icona della campanella
+                    Clicca sull'icona della campanella
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Posso usare questa dashboard da mobile?
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                      Certo
+                   Certo  
                   </div>
                 </div>
               </div>
             </div>
         </div>
       </div>
-      <!-- Card con checkbox -->
+      <!-- Terza Card con checkbox -->
         <div class="col-xl-4 col-lg-4 debug">
-          <div class="card" style="width: 100%;">
+          <div class="card mb-3" style="width: 100%;">
             <div class="card-header">
               To do
             </div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 Kickoff nuove classi
               </label>
             </div>
+          </td>
+        </tr>
+        <tr><td>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
               <label class="form-check-label" for="flexCheckChecked">
                 Lezione su Bootstrap 5
               </label>
             </div>
+          </td>
+        </tr>
+        <tr><td>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                Controllare Username Github
               </label>
             </div>
+          </td>
+        </tr>
+          </tbody>
+          </table>
           </div>
-          <!-- Card con grafico e link -->
+          <!-- Quarta Card con grafico e link -->
           <div class="card" style="width: 100%;">
             <img src="./img/stats.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
