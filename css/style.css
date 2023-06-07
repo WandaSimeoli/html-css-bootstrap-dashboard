@@ -31,3 +31,9 @@ header {
     bottom: 10;
     padding: 10px;
 }
+.gray:hover {
+    background-color: lightgray;
+}
+#grad {
+    background-image: linear-gradient(rgb(23, 23, 37), rgb(0, 0, 75));
+  }
